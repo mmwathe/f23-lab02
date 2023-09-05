@@ -1,18 +1,31 @@
-interface Rectangle {
-    width: number,
-    height: number,
+// interface Rectangle {
+//     width: number,
+//     height: number,
+//     computeArea: () => number
+// }
+
+class rectangle implements Shape {
+    private width: number
+    private height: number
     computeArea: () => number
-}
-
-function newRectangle(width: number, height: number): Rectangle {
-    return {
-        width,
-        height,
-
-        computeArea: function (): number {
+    constructor(width: number, height: number) {
+        this.width = width
+        this.height = height
+        this.computeArea = function (): number {
             return width * height
         }
     }
-}
 
-export { Rectangle, newRectangle }
+}
+// function newRectangle(width: number, height: number): Rectangle {
+//     return {
+//         width,
+//         height,
+
+//         computeArea: function (): number {
+//             return width * height
+//         }
+//     }
+// }
+
+export { rectangle }
