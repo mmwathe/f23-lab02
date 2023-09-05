@@ -1,4 +1,4 @@
-class circle implements Shape {
+class Circle implements Shape {
     private radius: number
     computeArea: () => number
     constructor(radius: number) {
@@ -18,4 +18,4 @@ class circle implements Shape {
 //     }
 // }
 
-export { circle }
+export { Circle }

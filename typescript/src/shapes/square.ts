@@ -7,7 +7,7 @@
 //     }
 // }
 
-class square implements Shape {
+class Square implements Shape {
     private sideLen: number
     computeArea: () => number
     constructor(sideLen: number) {
@@ -17,4 +17,4 @@ class square implements Shape {
         }
     }
 }
-export { square }
+export { Square }

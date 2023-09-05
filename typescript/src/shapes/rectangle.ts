@@ -4,7 +4,7 @@
 //     computeArea: () => number
 // }
 
-class rectangle implements Shape {
+class Rectangle implements Shape {
     private width: number
     private height: number
     computeArea: () => number
@@ -17,15 +17,8 @@ class rectangle implements Shape {
     }
 
 }
-// function newRectangle(width: number, height: number): Rectangle {
-//     return {
-//         width,
-//         height,
+function newRectangle(width: number, height: number): Rectangle {
+    return new Rectangle(width, height)
+}
 
-//         computeArea: function (): number {
-//             return width * height
-//         }
-//     }
-// }
-
-export { rectangle }
+export { Rectangle, newRectangle }
