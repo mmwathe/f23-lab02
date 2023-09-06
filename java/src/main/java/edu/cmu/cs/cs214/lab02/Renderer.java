@@ -4,9 +4,14 @@ import edu.cmu.cs.cs214.lab02.shapes.*;
 
 public class Renderer {
     private Rectangle rectangle;
+    private double height;
+    private double width;
+
     
-    Renderer(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    Renderer(double height, double width) {
+        this.height = height;
+        this.width = width;
+        this.rectangle = new Rectangle(height, width);
     }
 
     void draw() {
