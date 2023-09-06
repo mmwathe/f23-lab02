@@ -10,6 +10,6 @@ public class Rectangle implements Shape {
     }
 
     public double getArea() {
-        return height * width;
+        return this.height * this.width;
     }
 }
